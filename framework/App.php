@@ -1,5 +1,7 @@
 <?php
-namespace App;
+namespace Coolcigarets\Framework;
+
+use Coolcigarets\ApiValidation\Repository\Controllers\HttpController;
 
 class App
 {

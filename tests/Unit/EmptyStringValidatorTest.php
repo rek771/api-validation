@@ -1,14 +1,14 @@
 <?php
 namespace Unit;
 
-use App\Validators\EmptyString;
+use Coolcigarets\ApiValidation\UseCases\Rules\EmptyString;
 use PHPUnit\Framework\TestCase;
 
 class EmptyStringValidatorTest extends TestCase
 {
     /**
      * Needed success on validation of words
-     * @throws \App\Exceptions\ValidateException
+     * @throws \Coolcigarets\ApiValidation\Entities\Exceptions\ValidateException
      */
     public function testValidateSuccess(): void
     {
@@ -25,7 +25,7 @@ class EmptyStringValidatorTest extends TestCase
         try {
             (new EmptyString(''))->validate();
             $this->fail();
-        } catch (\App\Exceptions\ValidateException $exception) {
+        } catch (\Coolcigarets\ApiValidation\Entities\Exceptions\ValidateException $exception) {
             $this->assertTrue(true);
         }
     }

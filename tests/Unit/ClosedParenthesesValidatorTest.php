@@ -1,15 +1,15 @@
 <?php
 namespace Unit;
 
-use App\Exceptions\ValidateException;
-use App\Validators\ClosedParentheses;
+use Coolcigarets\ApiValidation\Entities\Exceptions\ValidateException;
+use Coolcigarets\ApiValidation\UseCases\Rules\ClosedParentheses;
 use PHPUnit\Framework\TestCase;
 
 class ClosedParenthesesValidatorTest extends TestCase
 {
     /**
      * Needed success on validation of words
-     * @throws \App\Exceptions\ValidateException
+     * @throws \Coolcigarets\ApiValidation\Entities\Exceptions\ValidateException
      */
     public function testValidateSuccess(): void
     {

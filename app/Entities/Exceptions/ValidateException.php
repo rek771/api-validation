@@ -1,5 +1,5 @@
 <?php
-namespace App\Exceptions;
+namespace Coolcigarets\ApiValidation\Entities\Exceptions;
 
 use Exception;
 

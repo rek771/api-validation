@@ -1,22 +1,14 @@
 <?php
-namespace App\Validators;
+namespace Coolcigarets\ApiValidation\UseCases\Rules;
 
-use App\Contracts\Validator;
-use App\Exceptions\ValidateException;
+use Coolcigarets\ApiValidation\Entities\Exceptions\ValidateException;
+use Coolcigarets\ApiValidation\Entities\Rules\AbstractRule;
 
 /**
  * Validation for the correctness of the number of open and closed brackets
  */
-class ClosedParentheses implements Validator
+class ClosedParentheses extends AbstractRule
 {
-    /** @var string Checked text */
-    private string $txt;
-
-    public function __construct(string $txt)
-    {
-        $this->txt = $txt;
-    }
-
     /**
      * @inheritdoc
      */
