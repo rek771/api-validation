@@ -1,8 +1,10 @@
 {
-  "name": "id.shabunin/parentheses",
-  "description": "Check parentheses by clothes API",
+  "name": "id.shabunin/api-validation",
+  "description": "Check text by patterns API",
   "require": {
-    "php": ">=7.4"
+    "php": ">=7.4",
+    "ext-json": "*",
+    "ext-mbstring": "*"
   },
   "require-dev": {
     "phpunit/php-code-coverage": "^6.0.7",
@@ -10,7 +12,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Coolcigarets\\ApiValidation\\": "app"
+      "Coolcigarets\\ApiValidation\\": "app",
+      "Coolcigarets\\Framework\\": "framework"
     }
   },
   "autoload-dev": {
