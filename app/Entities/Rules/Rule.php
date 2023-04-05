@@ -10,5 +10,5 @@ interface Rule
      * @return bool
      * @throws ValidateException
      */
-    function validate(): bool;
+    public function validate(): bool;
 }
